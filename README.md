@@ -57,7 +57,7 @@ Both virtual machines were configured on the same virtual NAT network for lab co
 
 The lab was built using two virtual machines on the same virtual NAT network. Ubuntu/OpenPLC acted as the simulated PLC, while Kali Linux was used as the assessment workstation for enumeration, Modbus testing, and packet capture.
 
-![Lab Architecture](lab-architecture/lab-architecture.png)
+![Lab Architecture](lab-architecture/lab-architecture.jpg)
 
 ---
 
