@@ -1,0 +1,13 @@
+# Nmap 7.99 scan initiated Fri Jul 17 11:08:34 2026 as: /usr/lib/nmap/nmap -Pn -p 8080,8443 --script http-title,http-server-header -oN openplc-http-info.txt 192.168.79.148
+Nmap scan report for 192.168.79.148
+Host is up (0.00075s latency).
+
+PORT     STATE SERVICE
+8080/tcp open  http-proxy
+|_http-server-header: Werkzeug/2.3.7 Python/3.10.12
+| http-title: Site doesn't have a title (text/html; charset=utf-8).
+|_Requested resource was /login
+8443/tcp open  https-alt
+MAC Address: 00:0C:29:37:DF:12 (VMware)
+
+# Nmap done at Fri Jul 17 11:08:40 2026 -- 1 IP address (1 host up) scanned in 5.61 seconds

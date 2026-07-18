@@ -1,0 +1,13 @@
+# Nmap 7.99 scan initiated Fri Jul 17 10:54:30 2026 as: /usr/lib/nmap/nmap -Pn -sV -p 502,8080,8443,44818 -oN nmap-results/openplc-service-scan.txt 192.168.79.148
+Nmap scan report for 192.168.79.148
+Host is up (0.0026s latency).
+
+PORT      STATE SERVICE       VERSION
+502/tcp   open  modbus        Modbus TCP
+8080/tcp  open  http          Werkzeug httpd 2.3.7 (Python 3.10.12)
+8443/tcp  open  ssl/http      Werkzeug httpd 2.3.7 (Python 3.10.12)
+44818/tcp open  EtherNetIP-2?
+MAC Address: 00:0C:29:37:DF:12 (VMware)
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Fri Jul 17 10:57:15 2026 -- 1 IP address (1 host up) scanned in 164.90 seconds

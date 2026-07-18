@@ -1,0 +1,12 @@
+# Nmap 7.99 scan initiated Fri Jul 17 11:02:26 2026 as: /usr/lib/nmap/nmap -Pn -p 502 --script modbus-discover -oN openplc-modbus-discover.txt 192.168.79.148
+Nmap scan report for 192.168.79.148
+Host is up (0.00063s latency).
+
+PORT    STATE SERVICE
+502/tcp open  modbus
+| modbus-discover: 
+|   sid 0x1: 
+|_    error: ILLEGAL FUNCTION
+MAC Address: 00:0C:29:37:DF:12 (VMware)
+
+# Nmap done at Fri Jul 17 11:02:31 2026 -- 1 IP address (1 host up) scanned in 5.34 seconds
