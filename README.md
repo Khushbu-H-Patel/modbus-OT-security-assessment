@@ -110,6 +110,7 @@ modbus-ot-security-assessment/
 │
 └── notes/
     ├── evidence-index.md
+    ├── mitre-attack-ics-mapping.md
     └── risk-assessment.md
 ```
 
