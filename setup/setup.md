@@ -296,27 +296,7 @@ This showed that Modbus/TCP was active and reachable on port `502`.
 
 ---
 
-## Final Setup State
-
-At the end of the setup phase:
-
-| Item | Status |
-|---|---|
-| Ubuntu VM installed | Complete |
-| Kali VM available | Complete |
-| Network connectivity between Ubuntu and Kali | Confirmed |
-| OpenPLC installed | Complete |
-| OpenPLC web interface accessible | Confirmed |
-| Sample Modbus program uploaded | Complete |
-| Program compiled successfully | Complete |
-| PLC runtime started | Complete |
-| Modbus/TCP port `502` listening | Confirmed |
-
----
-
 ## Lab Readiness
-
-After completing this setup, the lab was ready for the assessment phase.
 
 The next steps performed in the project were:
 
