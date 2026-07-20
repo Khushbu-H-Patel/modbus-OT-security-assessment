@@ -6,8 +6,6 @@ This project is a small OT/ICS security assessment lab built in a virtual enviro
 
 The lab demonstrates how an assessment workstation can identify an exposed Modbus/TCP service, read PLC data, perform a controlled write to a holding register, validate the change, capture the network traffic, and document the associated OT/ICS risk.
 
-This project was completed as a hands-on learning exercise to strengthen understanding of OT/ICS security assessment concepts, industrial protocols, and risk-based analysis.
-
 ---
 
 ## Project Objective
@@ -43,8 +41,8 @@ Both virtual machines were configured on the same virtual NAT network for lab co
 | Tool | Purpose |
 |---|---|
 | OpenPLC | Simulated PLC runtime |
-| Ubuntu Desktop | Host system for OpenPLC |
-| Kali Linux | Assessment workstation |
+| Ubuntu Desktop | Host system for OpenPLC/Teraget system |
+| Kali Linux | Assessment workstation/Attacker machine |
 | Nmap | Port scanning and service enumeration |
 | Nmap NSE Scripts | Modbus, EtherNet/IP, and HTTP enumeration |
 | Metasploit | Modbus/TCP read and write testing |
@@ -317,7 +315,7 @@ Based on the lab findings, relevant defensive controls include:
 
 - Restrict TCP port `502` to approved engineering workstations and HMIs only.
 - Segment OT networks from general IT or user networks.
-- Monitor for Modbus write function codes such as `6` and `16`.
+- Monitor for Modbus write function codes such as `6`.
 - Alert when new or unauthorized hosts communicate with PLC assets.
 - Restrict access to PLC management interfaces.
 - Maintain an OT asset inventory and expected communication baseline.
@@ -332,54 +330,6 @@ A short evidence index was created to summarize the major evidence collected dur
 Evidence index:
 
 - [Evidence index](notes/evidence-index.md)
-
----
-
-## Project Scope and Limitations
-
-This project was intentionally limited in scope so it could be completed quickly and documented clearly.
-
-The project did not include:
-
-- A real physical PLC.
-- A production OT network.
-- Full IEC 62443 or NIST SP 800-82 assessment.
-- Full firewall mitigation testing.
-- Full IDS/SIEM detection engineering.
-- Multi-protocol OT monitoring beyond the selected Modbus/TCP testing.
-
-The lab was designed as a controlled learning project, not a production-grade assessment.
-
----
-
-## Safety and Authorization Note
-
-All testing was performed only inside an isolated virtual lab environment owned and controlled by the project author.
-
-The techniques shown in this project should only be used in environments where explicit authorization has been granted.
-
-In real OT/ICS environments, active scanning and protocol testing should be carefully planned and approved because some industrial systems may be sensitive to unexpected traffic.
-
----
-
-## Interview Summary
-
-This project demonstrates hands-on interest in OT/ICS security risk assessment.
-
-The project shows the ability to:
-
-- Build a small virtual OT/ICS lab.
-- Configure OpenPLC as a simulated PLC.
-- Identify exposed industrial services.
-- Use Nmap for OT service enumeration.
-- Use Metasploit for controlled Modbus read/write testing.
-- Validate findings using packet capture.
-- Translate technical findings into OT/ICS risk language.
-- Recommend practical defensive controls.
-
-A concise interview explanation:
-
-> I built a small virtual OT/ICS lab using Ubuntu with OpenPLC as a simulated PLC and Kali as the assessment workstation. I used Nmap to identify exposed services, including Modbus/TCP on port 502. I then used Metasploit’s Modbus client module to perform read-only testing and a controlled write to a simulated tank-level register. Wireshark confirmed the Modbus function codes and packet-level activity. Finally, I documented the risk using a lightweight qualitative risk assessment approach and recommended controls such as segmentation, access restriction, monitoring for Modbus write functions, and asset communication baselining.
 
 ---
 
