@@ -27,7 +27,7 @@ This filter displayed traffic where the OpenPLC VM was involved and where TCP po
 
 TCP port `502` is commonly used for Modbus/TCP communication.
 
-![Wireshark traffic for read operation](screenshots/2_wireshark_traffic_for_read_operation.jpg)
+![Wireshark traffic for read operation](screenshots/2_wirreshark_traffic_for_read_operation.jpg)
 
 ---
 
