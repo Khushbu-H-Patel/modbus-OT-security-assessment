@@ -337,7 +337,7 @@ This lab maps most strongly to the following MITRE ATT&CK for ICS techniques:
 | `T1692.001` | Unauthorized Message: Command Message | A Modbus write command was sent from Kali to the simulated PLC. |
 | `T0861` | Point & Tag Identification | Process-related values were read from the simulated PLC. |
 
-The strongest direct mappings are `T0846.001`, `T0842`, and `T0836`. The other mappings are included because they are related to the lab behavior but should be explained carefully to avoid overstating the project scope.
+The strongest direct mappings are `T0846.001`, `T0842`, and `T0836`. The other mappings are included because they are related to the lab behavior.
 
 ---
 
