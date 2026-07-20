@@ -295,7 +295,7 @@ This confirmed that the controlled test was completed safely and the simulated P
 
 ![Metasploit restore register value](screenshots/10_restor_tank_level_back_to_original_value.jpg) 
 
-![Ubuntu local verification after restore](screenshots/11_run_script_ubuntu_to_verify_the_restored_value)
+![Ubuntu local verification after restore](screenshots/11_run_script_ubuntu_to_verify_the_restored_value.jpg)
 
 ---
 
