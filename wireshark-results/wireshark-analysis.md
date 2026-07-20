@@ -163,7 +163,7 @@ run
 
 The write traffic was then visible in Wireshark.
 
-![Wireshark traffic for write operation](screenshots/6_wireshark_traffic_for_write_to_generate_traffic.jpg)
+![Wireshark traffic for write operation](screenshots/5_write_operation_to_generate_traffic.jpg)
 
 ---
 
